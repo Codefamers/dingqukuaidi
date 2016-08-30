@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size android:height="@dimen/x4" android:width="@dimen/x4"/>
+    <solid android:color="@color/yellow"/>
+</shape>
+<!--<?xml version="1.0" encoding="utf-8"?>
+&lt;!&ndash; android:shape指定形状类型，默认为rectangle &ndash;&gt;
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    &lt;!&ndash; padding设置内间距 &ndash;&gt;
+    <padding
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp" />
+    &lt;!&ndash; size设置形状的大小 &ndash;&gt;
+    <size
+        android:width="4dp"
+        android:height="4dp" />
+    &lt;!&ndash; gradient设置渐变 &ndash;&gt;
+    <gradient
+        android:endColor="#000000"
+        android:gradientRadius="40dp"
+        android:startColor="#FFFFFF"
+        android:type="radial" />
+</shape>-->
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DingQuPostman/DingQuPostman.iml" filepath="$PROJECT_DIR$/DingQuPostman/DingQuPostman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dingqukuaidi.iml" filepath="$PROJECT_DIR$/dingqukuaidi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/ptr-lib/ptr-lib.iml" />
+    </modules>
+  </component>
+</project>

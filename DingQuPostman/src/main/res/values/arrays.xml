@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="idCategory">
+        <item>居民身份证</item>
+        <item>军人证</item>
+        <item>护照</item>
+        <item>营业执照</item>
+        <item>户口本</item>
+        <item>代码证</item>
+        <item>产权证</item>
+        <item>房卡证</item>
+        <item>台胞证</item>
+        <item>购房合同</item>
+        <item>税务登记证</item>
+        <item>低保证</item>
+    </string-array>
+    <string-array name="powerSupply">
+        <item>交流6kV</item>
+        <item>交流10kV</item>
+        <item>交流35kV</item>
+        <item>交流110kV</item>
+        <item>交流220kV</item>
+        <item>交流500kV</item>
+    </string-array>
+    <string-array name="property">
+        <item>承租人</item>
+        <item>权利人</item>
+    </string-array>
+    <string-array name="powerCategory">
+        <item>风能</item>
+        <item>太阳能</item>
+        <item>水电</item>
+        <item>生物质能</item>
+        <item>气体燃料</item>
+        <item>燃料电池</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="publish_module">
+        <item>互动学习</item>
+        <item>技术交流</item>
+        <item>生活交流</item>
+    </string-array>
+</resources>

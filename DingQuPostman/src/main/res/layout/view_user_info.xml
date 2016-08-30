@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/re_oneself_photo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/ll_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="phone"
+            android:text="*用户名称"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_telephone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="用户名称为账户联系人"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/ll_telephone"
+        android:layout_marginTop="@dimen/y16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="*用电地区:"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_choose_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/x8"
+            android:drawableRight="@mipmap/ico_arrow_down"
+            android:gravity="right"
+            android:hint="请选择"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_use_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_name"
+        android:layout_marginTop="@dimen/y16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="*用电地址:"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_detail_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入详细地址"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/re_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_use_position"
+        android:layout_marginTop="@dimen/y16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件类型:"
+            android:textColor="@color/text_grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_choose_papers_kind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/x8"
+            android:drawableRight="@mipmap/ico_arrow_down"
+            android:gravity="right"
+            android:hint="请选择"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_clerk_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re_company"
+        android:layout_marginTop="@dimen/y16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="证件号码:"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/et_clerk_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入证件号"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

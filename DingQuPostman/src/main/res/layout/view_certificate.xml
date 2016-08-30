@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--本人照片-->
+<RelativeLayout android:id="@+id/re_certificate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/y8"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_oneself_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y4"
+        android:text="上传相关附件"
+        android:textColor="@color/text_grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_oneself_hint"
+        android:layout_width="@dimen/x180"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_oneself_title"
+        android:text="居民用户请提供:房产证明,非居民用户请提供:营业执照或组织机构代码证"
+        android:textColor="#b2b2b2"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_oneself_photo"
+        android:layout_width="90dp"
+        android:layout_height="@dimen/y60"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/img_photo_upload" />
+
+</RelativeLayout>
+    <!--身份证照片-->
+<!--
+<RelativeLayout
+android:id="@+id/re_id_card_photo"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/re_oneself_photo"
+android:layout_marginBottom="@dimen/y8"
+android:layout_marginTop="@dimen/y8">
+
+<TextView
+    android:id="@+id/tv_id_card_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="@dimen/y26"
+    android:text="上传本人身份证照片"
+    android:textColor="#808080"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/tv_id_card_hint"
+    android:layout_width="@dimen/x170"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_id_card_title"
+    android:text="脸部清晰无遮挡，身份证信息无遮挡，完全露出手臂"
+    android:textColor="#b2b2b2"
+    android:textSize="12sp" />
+
+
+<ImageView
+    android:id="@+id/iv_id_card_photo"
+    android:layout_width="90dp"
+    android:layout_height="@dimen/y60"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:src="@mipmap/img_card_upload" />
+
+</RelativeLayout>
+
+<RelativeLayout
+android:id="@+id/re_work_card_photo"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/re_id_card_photo"
+android:layout_marginBottom="8dp"
+android:layout_marginTop="8dp">
+
+<TextView
+    android:id="@+id/tv_work_card_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="@dimen/y23"
+    android:text="工牌照片"
+    android:textColor="@color/text_grey"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/tv_work_card_hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_work_card_title"
+    android:text="工牌信息全部展现，清晰可辨"
+    android:textColor="#b2b2b2"
+    android:textSize="12sp" />
+
+<ImageView
+    android:id="@+id/iv_work_card_photo"
+    android:layout_width="90dp"
+    android:layout_height="@dimen/y60"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:scaleType="fitCenter"
+    android:src="@mipmap/img_credit_upload" />
+
+</RelativeLayout>-->

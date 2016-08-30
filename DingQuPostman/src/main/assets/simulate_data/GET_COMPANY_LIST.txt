@@ -1,0 +1,12 @@
+{
+  "success": "true",
+  "data": {
+    "list": [
+      {
+        "id": "576b8550460200276a24941d",
+        "name": "申通快递"
+      }
+    ],
+    "hasMore": "false"
+  }
+}

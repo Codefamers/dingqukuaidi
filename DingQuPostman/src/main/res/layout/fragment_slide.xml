@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/toolbar_padding_top"
+    android:padding="@dimen/x16"
+    android:background="@mipmap/bg_main"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/iv_user_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x24"
+        android:layout_marginBottom="@dimen/x8"
+        android:background="@drawable/bg_circle_image"
+        android:src="@mipmap/default_photo"/>
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:text="13834567890"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y8"
+        android:layout_below="@id/iv_user_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/alpha_cut_line"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y8"
+        />
+    <ListView
+        android:id="@+id/lv_slide"
+        android:layout_below="@id/alpha_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/cut_line"
+        android:layout_below="@+id/lv_slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y24"
+        android:src="@drawable/grey_cut_line"/>
+    <Button
+        android:id="@+id/btn_quit_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34"
+        android:layout_below="@id/cut_line"
+        android:background="@drawable/btn_confirm_bg"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:text="退出登录"/>
+</RelativeLayout>

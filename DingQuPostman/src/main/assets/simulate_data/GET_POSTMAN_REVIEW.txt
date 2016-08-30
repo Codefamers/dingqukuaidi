@@ -1,0 +1,19 @@
+{
+  "success": "true",
+  "data": {
+    "id": "577f1380577df205a5021f50",
+    "postmanId": "577f136f577df205a5021f4d",
+    "applyTime": "2016-07-08 10:44:16",
+    "status": 100,
+    "phoneNumber": "12312312311",
+    "contents": {
+      "personName": "屈淮南",
+      "idcardNumber": "130281198910242933",
+      "clerkNumber": "002",
+      "photo": "1111",
+      "idcardPic": "2222",
+      "clerkNumberPic": "3333",
+      "companyName": "顺丰快递"
+    }
+  }
+}

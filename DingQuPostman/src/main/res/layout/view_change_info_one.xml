@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--用户新装-->
+<RelativeLayout android:id="@+id/re_change_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_title_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_user_info"
+        android:layout_marginTop="@dimen/y16">
+        <TextView
+            android:id="@+id/txt_title_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="*居住人口:"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/et_title_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入准确的人口数"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_title_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title_one"
+        android:layout_marginTop="@dimen/y16">
+
+        <TextView
+            android:id="@+id/txt_title_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="*住房面积:"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_title_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入住房面积"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_title_three"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title_two"
+        android:layout_marginTop="@dimen/y16">
+
+        <TextView
+            android:id="@+id/txt_title_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="*住房面积:"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_title_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入住房面积"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_title_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/ll_title_three"
+        android:layout_marginTop="@dimen/y16">
+
+        <TextView
+            android:id="@+id/txt_title_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="*住房面积:"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/txt_choose_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/x8"
+            android:drawableRight="@mipmap/ico_arrow_down"
+            android:gravity="right"
+            android:hint="请选择"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="@color/text_grey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    <!--高压安装-->
+    <RelativeLayout android:id="@+id/re_high_install"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/btn_choose_manager"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/y8"
+           android:text="选择客户经理"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_choose_manager"
+            android:layout_below="@id/btn_choose_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</FrameLayout>

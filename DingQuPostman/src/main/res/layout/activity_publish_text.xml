@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/y8"
+    android:background="@color/bg_color">
+
+    <EditText
+        android:layout_marginTop="@dimen/y16"
+        android:id="@+id/et_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:background="@null"
+        android:hint="请输入标题"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_cut_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y8"
+        android:layout_below="@+id/et_edit_title"
+        android:src="@drawable/grey_cut_line" />
+    <EditText
+        android:id="@+id/et_edit_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_below="@id/img_cut_line_one"
+        android:layout_height="@dimen/y120"
+        android:hint="今日工作..."
+        android:gravity="clip_horizontal"
+        android:background="@null"
+
+        android:textSize="14sp" />
+    <ImageView
+        android:id="@+id/img_cut_line_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y8"
+        android:layout_below="@+id/et_edit_content"
+        android:src="@drawable/grey_cut_line" />
+    <TextView
+        android:id="@+id/txt_choose_publish_module_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_cut_line_two"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:text="选择发布版块"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_choose_publish_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_choose_publish_module_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x16"
+        android:background="@null"
+        android:drawablePadding="@dimen/x8"
+        android:drawableRight="@mipmap/ico_arrow_down"
+        android:gravity="right"
+        android:hint="请选择"
+        android:inputType="none"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textColorHint="@color/text_grey"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y8"
+        android:layout_below="@+id/txt_choose_publish_module_title"
+        android:src="@drawable/grey_cut_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_save_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_below="@id/img_cut_line">
+
+        <ImageView
+            android:id="@+id/iv_photo_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_add_photo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_photo_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_add_photo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_photo_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_add_photo"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_photo_four"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_save_photo"
+        android:src="@mipmap/ic_add_photo" />
+</RelativeLayout>

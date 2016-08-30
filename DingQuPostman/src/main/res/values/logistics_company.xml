@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="logistics_company">
+        <item>顺丰快递</item>
+        <item>中通快递</item>
+        <item>汇通快递</item>
+        <item>天天快递</item>
+        <item>圆通快递</item>
+        <item>宅急送快递</item>
+    </string-array>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main"
+    android:orientation="vertical">
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+    <ScrollView
+        android:id="@+id/sco_main_info"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/y16"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x8"
+                android:layout_marginRight="@dimen/x8"
+                android:background="@drawable/bg_complete_info">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_complete_info_hint"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/y8"
+                    android:paddingTop="@dimen/y8"
+                    android:text="完善信息后开始申请业务办理，马上开始吧！！"
+                    android:textColor="#f79669"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_marginLeft="@dimen/x16"
+                    android:layout_marginRight="@dimen/x16">
+
+                    <include
+                        android:id="@+id/view_user_info"
+                        layout="@layout/view_user_info"/>
+                    <include
+                        android:id="@+id/view_change_info"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        layout="@layout/view_change_info_one"
+                        android:layout_below="@id/view_user_info"/>
+                    <include
+                        android:id="@+id/view_agent_info"
+                        layout="@layout/view_agent_info"
+                        android:layout_below="@+id/view_change_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <include layout="@layout/view_certificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/y8"
+                        android:layout_below="@id/view_agent_info"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- </android.support.v7.widget.CardView>
+ -->        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_marginTop="@dimen/y8"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_is_agree_clause"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ico_unselect"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/x4"
+                android:textSize="12sp"
+                android:text="我已经同意" />
+
+            <TextView
+                android:id="@+id/txt_agree_clause"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/x4"
+                android:text="《国网天津电力公司电力业务办理告知书》"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_blue_bright" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/y16"
+                android:background="@drawable/btn_confirm_bg"
+                android:gravity="center"
+                android:text="提交申请"
+                android:textColor="@color/yellow"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

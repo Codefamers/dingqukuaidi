@@ -1,0 +1,20 @@
+{
+  "success": "true",
+  "data": {
+    "session_id": "5779c6b92a06b30f5d6268e5",
+    "id": "577365b1483cc3044b68b795",
+    "mobile": "15510974083",
+    "status": 100,
+    "reviewStatus": 100,
+    "rejectReason"："2323",
+    "contents": {
+      "clerkNumber": "002",
+      "clerkNumberPic": "123",
+      "companyName": "顺丰快递",
+      "idcardNumber": "130281198910242933",
+      "idcardPic": "11",
+      "personName": "屈淮南",
+      "photo": "33"
+    }
+  }
+}

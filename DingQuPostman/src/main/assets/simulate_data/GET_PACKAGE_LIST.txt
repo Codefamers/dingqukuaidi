@@ -1,0 +1,40 @@
+{
+  "success": "true",
+  "data": {
+    "list": [
+      {
+        "id": 18,
+        "express_company_name": "顺丰快递",
+        "express_number": "1015",
+        "postman_id": "577365b1483cc3044b68b795",
+        "receiver_phone": "13512000999",
+        "status": 1,
+        "create_time": "2016-07-04 09:58:15",
+        "deposit_money": 1.0
+      },
+      {
+       "id": 17,
+       "express_company_name": "顺丰快递",
+       "express_number": "1014",
+       "postman_id": "577365b1483cc3044b68b795",
+       "receiver_phone": "15512000999",
+       "status": 1,
+       "create_time": "2016-07-04 09:58:15",
+       "deposit_money": 1.0
+      },
+      {
+        "id": 19,
+        "express_company_name": "顺丰快递",
+        "express_number": "1016",
+        "postman_id": "577365b1483cc3044b68b795",
+        "receiver_phone": "13512000459",
+        "status": 1,
+        "create_time": "2016-07-05 09:58:15",
+        "deposit_money": 1.0
+      }
+
+    ],
+    "hasMore": "false",
+    "count": 1
+  }
+}

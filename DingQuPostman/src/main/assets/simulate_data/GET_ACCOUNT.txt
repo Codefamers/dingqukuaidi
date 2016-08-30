@@ -1,0 +1,6 @@
+{
+  "success": "true",
+  "data": {
+    "available": 97.0
+  }
+}

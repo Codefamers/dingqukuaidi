@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        sign_config {
+            keyAlias 'baseProject'
+            keyPassword '123456'
+            storeFile file('/Users/qinzhipeng/Documents/android/android-studio-project/BaseProject/app/publish.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.qzp.app"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    dexOptions {
+        incremental true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+}
+
+dependencies {
+
+    // compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.github.bumptech.glide:okhttp-integration:1.3.1@aar'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile files('libs/commons-lang-2.1.jar')
+    compile files('libs/systembartint-1.0.3.jar')
+    compile files('libs/httpclient-4.5.jar')
+    compile files('libs/httpcore-4.4.1.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/bcprov-jdk16-139.jar')
+    compile files('libs/core-3.1.0.jar')
+    compile files('libs/AMap_Services_V2.4.0.jar')
+    compile files('libs/Android_Location_V1.3.3.jar')
+    compile files('libs/Android_2DMapApi_V2.5.0.jar')
+    compile files('libs/commons-io-2.4.jar')
+    compile files('libs/BDAutoUpdateSDK_20150605_V1.2.0.jar')
+    compile files('libs/need_lib.jar')
+    compile files('libs/patchupdate.jar')
+    compile files('libs/core-3.1.0.jar')
+    compile files('libs/tbs_sdk_v1.5.1.1057_25436_obfs_20160331_144900.jar')
+    //compile files('libs/bcprov-jdk16-139.jar')
+}
+//
+
+// compile 'com.umeng.analytics:analytics:latest.integration'
+
+/*
+
+ */
+

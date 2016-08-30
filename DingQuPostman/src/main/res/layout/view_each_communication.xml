@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:background="@mipmap/ic_page_three"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/rel_activity_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x16"
+                android:paddingBottom="@dimen/y4"
+                android:paddingTop="@dimen/y4">
+
+                <TextView
+                    android:id="@+id/txt_notification_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x4"
+                    android:text="活动通知 :"
+                    android:textColor="@color/text_grey" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_activity_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txt_notification_title"
+                    android:background="#fff" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y8"
+                android:src="@drawable/grey_cut_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_fine_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

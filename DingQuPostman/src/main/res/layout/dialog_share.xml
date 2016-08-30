@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#6fcccccc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="分享"
+        android:textColor="#333333"
+        android:textSize="@dimen/x15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#6fcccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btnWX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/share_weixin_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="微信好友"
+                android:textColor="#555555"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/share_weixin_friends_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="朋友圈"
+                android:textColor="#555555"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/share_qq_friends_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="QQ好友"
+                android:textColor="#555555"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnQZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/share_qq_zone_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="QQ空间"
+                android:textColor="#555555"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnSina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/share_sina_microblog_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="新浪微博"
+                android:textColor="#555555"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#33cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ececec">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/item_bg"
+            android:text="取消"
+            android:textColor="#555555"
+            android:textSize="@dimen/x15" />
+    </RelativeLayout>
+</LinearLayout>

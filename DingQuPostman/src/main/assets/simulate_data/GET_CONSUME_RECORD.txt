@@ -1,0 +1,17 @@
+{
+  "success": "true",
+  "data": {
+    "today": "2016-06-23",
+    "today_num": 30,
+    "today_count": 100,
+    "week_start": "2016-06-20",
+    "week_end": "2016-06-26",
+    "week_num": 190,
+    "week_count": 100,
+    "month": "2016-06",
+    "month_num": 120,
+    "month_count": 200,
+    "three_month_num": 20,
+    "three_month_count": 999.0
+  }
+}

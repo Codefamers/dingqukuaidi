@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/y4"
+    android:layout_marginBottom="@dimen/y4"
+    android:layout_marginLeft="@dimen/x4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_server_rough_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x4"
+        android:layout_marginBottom="@dimen/y4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_server_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y4"
+            android:layout_marginRight="@dimen/x4"
+            android:src="@mipmap/ic_server_photo" />
+        <ImageView
+            android:id="@+id/img_server_star"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y24"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img_server_photo"
+            android:layout_alignBottom="@id/img_server_photo"
+            android:layout_marginRight="@dimen/x4"
+            android:src="@mipmap/ic_grede_star"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/img_server_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_server_star"
+            android:text="4.85"
+            android:layout_alignBottom="@id/img_server_star"
+            android:textColor="@color/text_grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_server_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张勇"
+            android:layout_marginRight="@dimen/x6"
+            android:layout_below="@id/img_server_photo"
+            android:layout_marginLeft="@dimen/x6"
+            android:textColor="#000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/img_server_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_server_name"
+            android:layout_alignBottom="@+id/txt_server_name"
+            android:text="项目经理/业务精英"
+            android:gravity="bottom"
+            android:textColor="@color/text_grey"
+            android:textSize="9sp" />
+    </RelativeLayout>
+</RelativeLayout>
